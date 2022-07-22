@@ -73,7 +73,7 @@ HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:80
 
 HiddenServiceDir /var/lib/tor/other_hidden_service/
-HiddenServicePort 22 127.0.0.1:22
+HiddenServicePort 4242 127.0.0.1:4242
 
 ################ This section is just for relays #####################
 #
@@ -241,11 +241,11 @@ HiddenServicePort 22 127.0.0.1:22
 #BridgeDistribution none
 
 ## Configuration options can be imported from files or folders using the %include
-## option with the value being a path. This path can have wildcards. Wildcards are 
-## expanded first, using lexical order. Then, for each matching file or folder, the following 
-## rules are followed: if the path is a file, the options from the file will be parsed as if 
-## they were written where the %include option is. If the path is a folder, all files on that 
-## folder will be parsed following lexical order. Files starting with a dot are ignored. Files 
+## option with the value being a path. This path can have wildcards. Wildcards are
+## expanded first, using lexical order. Then, for each matching file or folder, the following
+## rules are followed: if the path is a file, the options from the file will be parsed as if
+## they were written where the %include option is. If the path is a folder, all files on that
+## folder will be parsed following lexical order. Files starting with a dot are ignored. Files
 ## on subfolders are ignored.
 ## The %include option can be used recursively.
 #%include /etc/torrc.d/*.conf
